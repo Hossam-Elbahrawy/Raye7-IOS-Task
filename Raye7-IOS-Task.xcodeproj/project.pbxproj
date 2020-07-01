@@ -100,11 +100,11 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		BF00A09424AD2B5900F9C91A /* Presenters */ = {
+		BF00A09424AD2B5900F9C91A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Presenters;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		BF00A09524AD2B8600F9C91A /* Network */ = {
@@ -138,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				BF00A09524AD2B8600F9C91A /* Network */,
-				BF00A09424AD2B5900F9C91A /* Presenters */,
+				BF00A09424AD2B5900F9C91A /* Controllers */,
 				BF00A09324AD2B4D00F9C91A /* Views */,
 				BF00A09224AD2AC300F9C91A /* Models */,
 				BF00A09124AD2A4500F9C91A /* Resources */,
