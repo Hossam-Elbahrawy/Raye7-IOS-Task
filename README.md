@@ -17,7 +17,8 @@ pod install
 - [ ] League details screen view
 - [ ] League details screen controller
 - [ ] Build network layer
-- [ ] Leagues model
+- [x] League model
+- [x] League details model
 - [ ] Get leagues from API
 - [ ] Get league details from API
 

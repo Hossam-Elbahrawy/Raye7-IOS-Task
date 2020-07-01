@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		956F0C155CE78275DD73609C /* Pods_Raye7_IOS_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A96B261A294B32E2C50361A5 /* Pods_Raye7_IOS_Task.framework */; };
+		BF00A09724AD337A00F9C91A /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A09624AD337A00F9C91A /* League.swift */; };
+		BF00A09924AD35B800F9C91A /* LeagueDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A09824AD35B800F9C91A /* LeagueDetails.swift */; };
 		BF027F0B24AD22BD005ABE41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027F0A24AD22BD005ABE41 /* AppDelegate.swift */; };
 		BF027F0D24AD22BD005ABE41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027F0C24AD22BD005ABE41 /* SceneDelegate.swift */; };
 		BF027F1224AD22BD005ABE41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF027F1024AD22BD005ABE41 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		5471DD924309D72956BED08B /* Pods_Raye7_IOS_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Raye7_IOS_TaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C12226030D88E71005FD20E /* Pods-Raye7-IOS-TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raye7-IOS-TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Raye7-IOS-TaskTests/Pods-Raye7-IOS-TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A96B261A294B32E2C50361A5 /* Pods_Raye7_IOS_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Raye7_IOS_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF00A09624AD337A00F9C91A /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		BF00A09824AD35B800F9C91A /* LeagueDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetails.swift; sourceTree = "<group>"; };
 		BF027F0724AD22BD005ABE41 /* Raye7-IOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raye7-IOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF027F0A24AD22BD005ABE41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF027F0C24AD22BD005ABE41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 		BF00A09224AD2AC300F9C91A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BF00A09624AD337A00F9C91A /* League.swift */,
+				BF00A09824AD35B800F9C91A /* LeagueDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -337,7 +343,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF027F0B24AD22BD005ABE41 /* AppDelegate.swift in Sources */,
+				BF00A09724AD337A00F9C91A /* League.swift in Sources */,
 				BF027F0D24AD22BD005ABE41 /* SceneDelegate.swift in Sources */,
+				BF00A09924AD35B800F9C91A /* LeagueDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
