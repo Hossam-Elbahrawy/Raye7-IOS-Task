@@ -10,6 +10,7 @@
 		956F0C155CE78275DD73609C /* Pods_Raye7_IOS_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A96B261A294B32E2C50361A5 /* Pods_Raye7_IOS_Task.framework */; };
 		BF00A09724AD337A00F9C91A /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A09624AD337A00F9C91A /* League.swift */; };
 		BF00A09924AD35B800F9C91A /* LeagueDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A09824AD35B800F9C91A /* LeagueDetails.swift */; };
+		BF00A09B24AD36CE00F9C91A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A09A24AD36CE00F9C91A /* Router.swift */; };
 		BF027F0B24AD22BD005ABE41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027F0A24AD22BD005ABE41 /* AppDelegate.swift */; };
 		BF027F0D24AD22BD005ABE41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027F0C24AD22BD005ABE41 /* SceneDelegate.swift */; };
 		BF027F1224AD22BD005ABE41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF027F1024AD22BD005ABE41 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		A96B261A294B32E2C50361A5 /* Pods_Raye7_IOS_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Raye7_IOS_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF00A09624AD337A00F9C91A /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		BF00A09824AD35B800F9C91A /* LeagueDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetails.swift; sourceTree = "<group>"; };
+		BF00A09A24AD36CE00F9C91A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		BF027F0724AD22BD005ABE41 /* Raye7-IOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raye7-IOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF027F0A24AD22BD005ABE41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF027F0C24AD22BD005ABE41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		BF00A09524AD2B8600F9C91A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BF00A09A24AD36CE00F9C91A /* Router.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			files = (
 				BF027F0B24AD22BD005ABE41 /* AppDelegate.swift in Sources */,
 				BF00A09724AD337A00F9C91A /* League.swift in Sources */,
+				BF00A09B24AD36CE00F9C91A /* Router.swift in Sources */,
 				BF027F0D24AD22BD005ABE41 /* SceneDelegate.swift in Sources */,
 				BF00A09924AD35B800F9C91A /* LeagueDetails.swift in Sources */,
 			);
