@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct League{
+struct League: Decodable{
     
     var id: String
     var shortName: String

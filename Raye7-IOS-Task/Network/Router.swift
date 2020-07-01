@@ -12,8 +12,7 @@ import Alamofire
 enum Router: URLRequestConvertible {
     
     case getLegues
-    case getLeagueDetails(String)
-    
+    case getLeagueDetails(id: String)
     
     var url: URL {
         switch self {
@@ -23,6 +22,7 @@ enum Router: URLRequestConvertible {
             return URL(string: "https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=\(id)")!
         }
     }
+    
     var method: HTTPMethod{
         switch self {
         case .getLegues:
@@ -34,7 +34,6 @@ enum Router: URLRequestConvertible {
     }
     
     func asURLRequest() throws -> URLRequest {
-    
         var urlRequest = URLRequest(url: url)
         urlRequest.method = method
         return urlRequest

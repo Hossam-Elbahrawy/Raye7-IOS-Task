@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct LeagueDetails {
+struct LeagueDetails: Decodable {
     
     var name: String
     var sport: String
