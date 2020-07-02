@@ -13,9 +13,14 @@ class LeagueDetailsViewController: UIViewController {
     
     var leagueDetails = LeagueDetails()
     var leagueId:String = ""
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
     override func viewDidLoad() {
         print("In League Details View Controller")
         getLeagueDetails()
+        print(leagueId)
     }
     
 }

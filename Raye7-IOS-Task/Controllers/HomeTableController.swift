@@ -14,10 +14,14 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var leaguesTableView: UITableView!
     var leagues:[League] = []
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
     override func viewDidLoad() {
         registerCustomCells()
         getLeagues()
     }
+    
 }
 
 // MARK: - HomeViewDataSource Functions
@@ -40,7 +44,6 @@ extension HomeViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let leagueId = leagues[indexPath.row].id
-        print(leagueId)
         gotToLeagueDetails(leagueId: leagueId)
     }
 }
@@ -66,11 +69,13 @@ extension HomeViewController{
     }
     private func gotToLeagueDetails(leagueId: String){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let leagueDetails = storyboard.instantiateViewController(identifier: "LeagueDetailsViewController") as! LeagueDetailsViewController
-        leagueDetails.leagueId = leagueId
-        leagueDetails.modalPresentationStyle = .fullScreen
-        
-        self.present(leagueDetails, animated: true, completion: nil)
+        let leagueDetailsVC = storyboard.instantiateViewController(identifier: "LeagueDetailsViewController") as! LeagueDetailsViewController
+        leagueDetailsVC.leagueId = leagueId
+        leagueDetailsVC.modalPresentationStyle = .fullScreen
+//        let navController = UINavigationController(rootViewController: leagueDetailsVC)
+    
+        self.navigationController?.pushViewController(leagueDetailsVC, animated: true)
+//        self.present(navController, animated:true, completion: nil)
     }
     
 }
