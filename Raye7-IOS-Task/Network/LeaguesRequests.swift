@@ -48,9 +48,12 @@ class LeaguesRequests {
             case .success(let data):
                 do {
                     //Parsing Json Data into an leagueDetails object
-                    let leagueDetails = try JSONDecoder().decode(LeagueDetails.self, from: data)
+                    let parsedData = try JSONDecoder().decode([String: [LeagueDetails]].self, from: data)
                     //Callback function that returns leagueDetails object
-                    callback(.success(leagueDetails))
+                    let leagueDetails =  parsedData["leagues"]!
+                    print(leagueDetails)
+                    let dada = LeagueDetails()
+                    callback(.success(dada))
                 } catch let error {
                     //Callback function that returns parsing error
                     callback(.failure(error))
