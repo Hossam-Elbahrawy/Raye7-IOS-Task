@@ -21,6 +21,8 @@
 		BFA969EC24AE013D00C15CFA /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA969EB24AE013D00C15CFA /* HomeTableController.swift */; };
 		BFA969F324AE0E5200C15CFA /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA969F124AE0E5200C15CFA /* LeagueCell.swift */; };
 		BFA969F424AE0E5200C15CFA /* LeagueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA969F224AE0E5200C15CFA /* LeagueCell.xib */; };
+		BFA969F624AE2D9000C15CFA /* LeagueDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA969F524AE2D9000C15CFA /* LeagueDetailsView.swift */; };
+		BFA969F824AE2DDA00C15CFA /* LeagueDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA969F724AE2DDA00C15CFA /* LeagueDetailsViewController.swift */; };
 		F57389891786DA90590F1553 /* Pods_Raye7_IOS_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471DD924309D72956BED08B /* Pods_Raye7_IOS_TaskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		BFA969EB24AE013D00C15CFA /* HomeTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
 		BFA969F124AE0E5200C15CFA /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
 		BFA969F224AE0E5200C15CFA /* LeagueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeagueCell.xib; sourceTree = "<group>"; };
+		BFA969F524AE2D9000C15CFA /* LeagueDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetailsView.swift; sourceTree = "<group>"; };
+		BFA969F724AE2DDA00C15CFA /* LeagueDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetailsViewController.swift; sourceTree = "<group>"; };
 		C7BA7FCB2C8F40ACA323817C /* Pods-Raye7-IOS-TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raye7-IOS-TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Raye7-IOS-TaskTests/Pods-Raye7-IOS-TaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		E520FA631831E4FC748A1E04 /* Pods-Raye7-IOS-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raye7-IOS-Task.release.xcconfig"; path = "Target Support Files/Pods-Raye7-IOS-Task/Pods-Raye7-IOS-Task.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +118,7 @@
 			children = (
 				BFA969F124AE0E5200C15CFA /* LeagueCell.swift */,
 				BFA969F224AE0E5200C15CFA /* LeagueCell.xib */,
+				BFA969F524AE2D9000C15CFA /* LeagueDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BFA969EB24AE013D00C15CFA /* HomeTableController.swift */,
+				BFA969F724AE2DDA00C15CFA /* LeagueDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -362,6 +368,8 @@
 				BF027F0B24AD22BD005ABE41 /* AppDelegate.swift in Sources */,
 				BF00A09D24AD4AE300F9C91A /* LeaguesRequests.swift in Sources */,
 				BF00A09724AD337A00F9C91A /* League.swift in Sources */,
+				BFA969F824AE2DDA00C15CFA /* LeagueDetailsViewController.swift in Sources */,
+				BFA969F624AE2D9000C15CFA /* LeagueDetailsView.swift in Sources */,
 				BF00A09B24AD36CE00F9C91A /* Router.swift in Sources */,
 				BF027F0D24AD22BD005ABE41 /* SceneDelegate.swift in Sources */,
 				BFA969F324AE0E5200C15CFA /* LeagueCell.swift in Sources */,

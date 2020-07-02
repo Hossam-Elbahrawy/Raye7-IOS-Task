@@ -38,7 +38,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="her-8L-a9W" secondAttribute="trailing" constant="8" id="6hh-aK-QNb"/>
                             <constraint firstAttribute="bottom" secondItem="her-8L-a9W" secondAttribute="bottom" constant="8" id="8SL-sr-MYY"/>
@@ -65,7 +64,7 @@
                 <outlet property="leagueShortNameLable" destination="her-8L-a9W" id="iLo-zm-Xv9"/>
                 <outlet property="leagueSportLable" destination="yGP-xi-qlK" id="siQ-Gj-GWf"/>
             </connections>
-            <point key="canvasLocation" x="-168" y="-85"/>
+            <point key="canvasLocation" x="-168.11594202898553" y="-85.044642857142847"/>
         </tableViewCell>
     </objects>
 </document>

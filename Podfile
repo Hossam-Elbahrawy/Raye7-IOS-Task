@@ -7,6 +7,8 @@ target 'Raye7-IOS-Task' do
 
   # Pods for Raye7-IOS-Task
   pod 'Alamofire', '~> 5.2'
+  pod 'Kingfisher', '~> 5.0'
+
 
   target 'Raye7-IOS-TaskTests' do
     inherit! :search_paths

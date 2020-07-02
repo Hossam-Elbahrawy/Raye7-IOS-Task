@@ -13,13 +13,10 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var leaguesTableView: UITableView!
     var leagues:[League] = []
+    
     override func viewDidLoad() {
-        
-        print("In Home Screen")
-        
         registerCustomCells()
         getLeagues()
-        
     }
 }
 
@@ -36,6 +33,12 @@ extension HomeViewController: UITableViewDataSource{
         let shortName = leagues[indexPath.row].shortName
         cell.setCellData(name: name, sport: sport, shortName: shortName )
         return cell
+    }
+}
+//MARK: - HomeViewDelegate Functions
+extension HomeViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
     }
 }
 

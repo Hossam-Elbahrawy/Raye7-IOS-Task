@@ -12,20 +12,12 @@ class LeagueCell: UITableViewCell {
 
     @IBOutlet weak var leagueNameLable: UILabel!
     @IBOutlet weak var leagueSportLable: UILabel!
-    
     @IBOutlet weak var leagueShortNameLable: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
-   
     func setCellData(name: String?, sport: String?, shortName:String?)  {
         self.leagueNameLable.text = name
         self.leagueSportLable.text = sport
