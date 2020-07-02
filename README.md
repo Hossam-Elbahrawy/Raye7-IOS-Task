@@ -14,7 +14,7 @@ pod install
 ## To-Do
 - [x] Home list screen View
 - [x] Home list  screen controller
-- [ ] League details screen view
+- [x] League details screen view
 - [ ] League details screen controller
 - [x] Build network layer
 - [x] League model

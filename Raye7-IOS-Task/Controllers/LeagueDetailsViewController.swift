@@ -6,11 +6,14 @@
 //  Copyright © 2020 Hossam Elbahrawy. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
 
 class LeagueDetailsViewController: UIViewController {
+
+ 
     override func viewDidLoad() {
-        print("In League Details Screen")
+        print("In League Details View Controller")
     }
+    
 }
