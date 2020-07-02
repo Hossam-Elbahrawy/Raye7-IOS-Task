@@ -15,12 +15,14 @@ pod install
 - [x] Home list screen View
 - [x] Home list  screen controller
 - [x] League details screen view
-- [ ] League details screen controller
+- [x] League details screen controller
 - [x] Build network layer
 - [x] League model
 - [x] League details model
 - [x] Get leagues from API
-- [ ] Get league details from API
+- [x] Get league details from API
+- [ ] Build database layer using Realm
+- [ ] Cache data into the database 
 
 
 ## Screenshots
