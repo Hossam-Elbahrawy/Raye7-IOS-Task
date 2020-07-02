@@ -12,14 +12,14 @@ pod install
 
 
 ## To-Do
-- [ ] Home list screen View
-- [ ] Home list  screen controller
+- [x] Home list screen View
+- [x] Home list  screen controller
 - [ ] League details screen view
 - [ ] League details screen controller
 - [x] Build network layer
 - [x] League model
 - [x] League details model
-- [ ] Get leagues from API
+- [x] Get leagues from API
 - [ ] Get league details from API
 
 
