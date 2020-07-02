@@ -11,13 +11,15 @@
 		BF00A09724AD337A00F9C91A /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A09624AD337A00F9C91A /* League.swift */; };
 		BF00A09924AD35B800F9C91A /* LeagueDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A09824AD35B800F9C91A /* LeagueDetails.swift */; };
 		BF00A09B24AD36CE00F9C91A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A09A24AD36CE00F9C91A /* Router.swift */; };
-		BF00A09D24AD4AE300F9C91A /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A09C24AD4AE300F9C91A /* Requests.swift */; };
+		BF00A09D24AD4AE300F9C91A /* LeaguesRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00A09C24AD4AE300F9C91A /* LeaguesRequests.swift */; };
 		BF027F0B24AD22BD005ABE41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027F0A24AD22BD005ABE41 /* AppDelegate.swift */; };
 		BF027F0D24AD22BD005ABE41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027F0C24AD22BD005ABE41 /* SceneDelegate.swift */; };
 		BF027F1224AD22BD005ABE41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF027F1024AD22BD005ABE41 /* Main.storyboard */; };
 		BF027F1424AD22BD005ABE41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF027F1324AD22BD005ABE41 /* Assets.xcassets */; };
 		BF027F1724AD22BD005ABE41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF027F1524AD22BD005ABE41 /* LaunchScreen.storyboard */; };
 		BF027F2224AD22BD005ABE41 /* Raye7_IOS_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027F2124AD22BD005ABE41 /* Raye7_IOS_TaskTests.swift */; };
+		BFA969EA24AE00E100C15CFA /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA969E924AE00E100C15CFA /* HomeTableView.swift */; };
+		BFA969EC24AE013D00C15CFA /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA969EB24AE013D00C15CFA /* HomeTableController.swift */; };
 		F57389891786DA90590F1553 /* Pods_Raye7_IOS_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471DD924309D72956BED08B /* Pods_Raye7_IOS_TaskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +41,7 @@
 		BF00A09624AD337A00F9C91A /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		BF00A09824AD35B800F9C91A /* LeagueDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetails.swift; sourceTree = "<group>"; };
 		BF00A09A24AD36CE00F9C91A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		BF00A09C24AD4AE300F9C91A /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		BF00A09C24AD4AE300F9C91A /* LeaguesRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesRequests.swift; sourceTree = "<group>"; };
 		BF027F0724AD22BD005ABE41 /* Raye7-IOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raye7-IOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF027F0A24AD22BD005ABE41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF027F0C24AD22BD005ABE41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		BF027F1D24AD22BD005ABE41 /* Raye7-IOS-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Raye7-IOS-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF027F2124AD22BD005ABE41 /* Raye7_IOS_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raye7_IOS_TaskTests.swift; sourceTree = "<group>"; };
 		BF027F2324AD22BD005ABE41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA969E924AE00E100C15CFA /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		BFA969EB24AE013D00C15CFA /* HomeTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
 		C7BA7FCB2C8F40ACA323817C /* Pods-Raye7-IOS-TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raye7-IOS-TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Raye7-IOS-TaskTests/Pods-Raye7-IOS-TaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		E520FA631831E4FC748A1E04 /* Pods-Raye7-IOS-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raye7-IOS-Task.release.xcconfig"; path = "Target Support Files/Pods-Raye7-IOS-Task/Pods-Raye7-IOS-Task.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +110,7 @@
 		BF00A09324AD2B4D00F9C91A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BFA969E924AE00E100C15CFA /* HomeTableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 		BF00A09424AD2B5900F9C91A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BFA969EB24AE013D00C15CFA /* HomeTableController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BF00A09A24AD36CE00F9C91A /* Router.swift */,
-				BF00A09C24AD4AE300F9C91A /* Requests.swift */,
+				BF00A09C24AD4AE300F9C91A /* LeaguesRequests.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -348,8 +354,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA969EA24AE00E100C15CFA /* HomeTableView.swift in Sources */,
+				BFA969EC24AE013D00C15CFA /* HomeTableController.swift in Sources */,
 				BF027F0B24AD22BD005ABE41 /* AppDelegate.swift in Sources */,
-				BF00A09D24AD4AE300F9C91A /* Requests.swift in Sources */,
+				BF00A09D24AD4AE300F9C91A /* LeaguesRequests.swift in Sources */,
 				BF00A09724AD337A00F9C91A /* League.swift in Sources */,
 				BF00A09B24AD36CE00F9C91A /* Router.swift in Sources */,
 				BF027F0D24AD22BD005ABE41 /* SceneDelegate.swift in Sources */,

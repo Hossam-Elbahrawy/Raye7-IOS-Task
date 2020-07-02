@@ -9,9 +9,9 @@
 import Foundation
 import Alamofire
 
-class Requests {
+class LeaguesRequests {
     
-    func getLeagues(_ callback: @escaping (Result<[League], Error>)-> Void)  {
+   static func getLeagues(_ callback: @escaping (Result<[League], Error>)-> Void)  {
         
         //Making HTTP request with getLegues configurations
         AF.request(Router.getLegues).responseData {(response: AFDataResponse<Data>) in
@@ -21,9 +21,10 @@ class Requests {
             case .success( let data):
                 do {
                     //Parsing Json Data into an array of leagues
-                    let leagues = try JSONDecoder().decode([League].self, from: data)
+                    let parsedData = try JSONDecoder().decode( [String: [League]].self, from: data)
+                    let leagues =  parsedData["leagues"]
                     //Callback function that returns array of leagues
-                    callback(.success(leagues))
+                    callback(.success(leagues ?? []))
                 } catch let error  {
                     //Callback function that returns parsing error
                     callback(.failure(error))
@@ -37,7 +38,7 @@ class Requests {
         }
     }
     
-    func getLeagueDetails(id: String,_ callback: @escaping (Result<LeagueDetails, Error>)-> Void)  {
+  static  func getLeagueDetails(id: String,_ callback: @escaping (Result<LeagueDetails, Error>)-> Void)  {
         
         //Making HTTP request with getLeagueDetails configurations
         AF.request(Router.getLeagueDetails(id: id )).responseData{(response: AFDataResponse<Data>) in

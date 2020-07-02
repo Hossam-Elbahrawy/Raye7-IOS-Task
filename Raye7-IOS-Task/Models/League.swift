@@ -11,7 +11,14 @@ import Foundation
 struct League: Decodable{
     
     var id: String
-    var shortName: String
-    var name: String
-    var sport: String
+    var shortName: String?
+    var name: String?
+    var sport: String?
+    
+    enum CodingKeys: String, CodingKey {
+           case id = "idLeague"
+           case shortName = "strLeagueAlternate"
+           case name = "strLeague"
+           case sport = "strSport"
+       }
 }
