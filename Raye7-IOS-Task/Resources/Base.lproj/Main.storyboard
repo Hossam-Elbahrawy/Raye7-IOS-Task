@@ -122,12 +122,12 @@
                             <constraint firstItem="KTN-1I-cLc" firstAttribute="leading" secondItem="207-Rp-u8b" secondAttribute="trailing" constant="8" id="84b-oP-YfA"/>
                             <constraint firstItem="0of-Bi-d5q" firstAttribute="leading" secondItem="qvz-V0-ZTo" secondAttribute="leading" constant="20" id="FSg-9Q-vMG"/>
                             <constraint firstItem="OLb-JA-VkJ" firstAttribute="leading" secondItem="eiM-4m-NnZ" secondAttribute="trailing" constant="8" id="Hi9-eD-JzB"/>
-                            <constraint firstItem="0of-Bi-d5q" firstAttribute="top" secondItem="cWD-6T-Cer" secondAttribute="bottom" constant="16" id="IXy-A2-ewf"/>
                             <constraint firstItem="2Vx-u2-VFa" firstAttribute="top" secondItem="KTN-1I-cLc" secondAttribute="bottom" constant="52" id="J1e-5A-PID"/>
                             <constraint firstItem="cWD-6T-Cer" firstAttribute="leading" secondItem="qvz-V0-ZTo" secondAttribute="leading" constant="20" id="Ok4-ba-T36"/>
                             <constraint firstItem="207-Rp-u8b" firstAttribute="top" secondItem="eiM-4m-NnZ" secondAttribute="bottom" constant="8" id="c68-Ti-BV1"/>
                             <constraint firstItem="cWD-6T-Cer" firstAttribute="top" secondItem="qvz-V0-ZTo" secondAttribute="top" id="efh-ye-FeQ"/>
                             <constraint firstItem="qvz-V0-ZTo" firstAttribute="trailing" secondItem="0of-Bi-d5q" secondAttribute="trailing" constant="20" id="ey3-cn-09Q"/>
+                            <constraint firstItem="0of-Bi-d5q" firstAttribute="top" secondItem="cWD-6T-Cer" secondAttribute="bottom" constant="16" id="fVN-9r-lOE"/>
                             <constraint firstItem="YWg-GT-Cgp" firstAttribute="top" secondItem="2Vx-u2-VFa" secondAttribute="bottom" constant="8" id="fxS-Yc-9TO"/>
                             <constraint firstItem="eiM-4m-NnZ" firstAttribute="top" secondItem="0of-Bi-d5q" secondAttribute="bottom" constant="8" id="kPd-1Y-ouQ"/>
                             <constraint firstItem="qvz-V0-ZTo" firstAttribute="trailing" secondItem="2Vx-u2-VFa" secondAttribute="trailing" constant="20" id="rq4-aR-W7O"/>
@@ -139,13 +139,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qvz-V0-ZTo"/>
                         <connections>
+                            <outlet property="leagueCountryLable" destination="KTN-1I-cLc" id="KxW-25-P87"/>
                             <outlet property="leagueDescriptionText" destination="YWg-GT-Cgp" id="nJz-vG-RGZ"/>
-                            <outlet property="leagueLocationLable" destination="KTN-1I-cLc" id="KxW-25-P87"/>
                             <outlet property="leagueLogoImage" destination="cWD-6T-Cer" id="iCi-Qq-7Up"/>
                             <outlet property="leagueNameLable" destination="0of-Bi-d5q" id="SNZ-ic-MPc"/>
                             <outlet property="leagueSportLable" destination="OLb-JA-VkJ" id="OLv-OF-6td"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="leagueDetailsView" destination="yxI-Xn-3PB" id="OME-Qp-0sh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cnc-7a-2OQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

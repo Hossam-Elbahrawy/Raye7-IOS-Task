@@ -14,19 +14,19 @@ class LeagueDetailsView: UIView {
      @IBOutlet weak var leagueLogoImage: UIImageView!
      @IBOutlet weak var leagueNameLable: UILabel!
      @IBOutlet weak var leagueSportLable: UILabel!
-     @IBOutlet weak var leagueLocationLable: UILabel!
+     @IBOutlet weak var leagueCountryLable: UILabel!
      @IBOutlet weak var leagueDescriptionText: UITextView!
     
     
     
-    func setLeagueDetailsData( logoImg: String?,name: String?,sport: String?, location: String?, description: String?){
+    func setLeagueDetailsData( LeaguDetails: LeagueDetails){
         
         leagueLogoImage.kf.indicatorType = .activity
-        let logoImgUrl =  URL(string: logoImg ?? "")
+        let logoImgUrl =  URL(string: LeaguDetails.logoImg ?? "")
         self.leagueLogoImage.kf.setImage(with: logoImgUrl)
-        self.leagueNameLable.text = name
-        self.leagueSportLable.text = sport
-        self.leagueLocationLable.text = location
-        self.leagueDescriptionText.text = description
+        self.leagueNameLable.text = LeaguDetails.name
+        self.leagueSportLable.text = LeaguDetails.sport
+        self.leagueCountryLable.text = LeaguDetails.country
+        self.leagueDescriptionText.text = LeaguDetails.description
     }
 }

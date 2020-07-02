@@ -11,17 +11,17 @@ import UIKit
 
 class LeagueDetailsViewController: UIViewController {
     
-    var leagueDetails = LeagueDetails()
+    @IBOutlet var leagueDetailsView: LeagueDetailsView!
     var leagueId:String = ""
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     override func viewDidLoad() {
-        print("In League Details View Controller")
-        getLeagueDetails()
         print(leagueId)
+        getLeagueDetails()
     }
+    
     
 }
 
@@ -30,12 +30,12 @@ extension LeagueDetailsViewController{
     
     private func getLeagueDetails(){
         
-        LeaguesRequests.getLeagueDetails(id: "4831", { result in
+        LeaguesRequests.getLeagueDetails(id: leagueId, { result in
             switch result{
             case .success(let data):
                 print(data)
-                self.leagueDetails = data
-                print(self.leagueDetails)
+                self.leagueDetailsView.setLeagueDetailsData(LeaguDetails: data )
+                
             case .failure(let error):
                 print(error)
             }

@@ -20,8 +20,8 @@ struct LeagueDetails: Decodable {
     enum CodingKeys: String, CodingKey {
         case name = "strLeague"
         case sport = "strSport"
-        case country = "StrCountry"
-        case logoImg = "StrLogo"
-        case description = "StrDescriptionEN"
+        case country = "strCountry"
+        case logoImg = "strLogo"
+        case description = "strDescriptionEN"
     }
 }
