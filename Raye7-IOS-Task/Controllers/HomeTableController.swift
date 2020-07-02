@@ -31,7 +31,10 @@ extension HomeViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LeagueCell") as! LeagueCell
         
-        cell.setCellData(name: leagues[indexPath.row].name, sport: leagues[indexPath.row].shortName)
+        let name = leagues[indexPath.row].name
+        let sport = leagues[indexPath.row].sport
+        let shortName = leagues[indexPath.row].shortName
+        cell.setCellData(name: name, sport: sport, shortName: shortName )
         return cell
     }
 }
