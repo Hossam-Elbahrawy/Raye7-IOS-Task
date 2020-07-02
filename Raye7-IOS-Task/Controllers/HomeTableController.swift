@@ -38,7 +38,10 @@ extension HomeViewController: UITableViewDataSource{
 //MARK: - HomeViewDelegate Functions
 extension HomeViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        
+        let leagueId = leagues[indexPath.row].id
+        print(leagueId)
+        gotToLeagueDetails(leagueId: leagueId)
     }
 }
 
@@ -61,4 +64,13 @@ extension HomeViewController{
             }
         }
     }
+    private func gotToLeagueDetails(leagueId: String){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let leagueDetails = storyboard.instantiateViewController(identifier: "LeagueDetailsViewController") as! LeagueDetailsViewController
+        leagueDetails.leagueId = leagueId
+        leagueDetails.modalPresentationStyle = .fullScreen
+        
+        self.present(leagueDetails, animated: true, completion: nil)
+    }
+    
 }
