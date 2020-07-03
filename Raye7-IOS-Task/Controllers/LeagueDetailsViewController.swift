@@ -33,7 +33,6 @@ extension LeagueDetailsViewController{
             switch result{
             case .success(let data):
                 self.leagueDetailsView.setLeagueDetailsData(LeaguDetails: data )
-                
             case .failure(let error):
                 print(error)
             }

@@ -22,4 +22,7 @@ class League: Object, Decodable{
         case name = "strLeague"
         case sport = "strSport"
     }
+    override static func primaryKey() -> String? {
+      return "id"
+    }
 }

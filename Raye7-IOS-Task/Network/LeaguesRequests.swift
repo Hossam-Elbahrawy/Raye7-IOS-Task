@@ -51,7 +51,6 @@ class LeaguesRequests {
                     let parsedData = try JSONDecoder().decode([String: [LeagueDetails]].self, from: data)
                     //Callback function that returns leagueDetails object
                     let leagueDetails =  parsedData["leagues"]!
-                    print(leagueDetails.first)
                     
                     callback(.success(leagueDetails.first!))
                 } catch let error {

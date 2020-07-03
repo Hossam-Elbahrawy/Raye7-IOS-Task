@@ -16,12 +16,12 @@ class RealmManager {
     
     static func saveLeagues(leagues: [League]){
         try! realm.write {
-            realm.add(leagues)
+            realm.add(leagues, update: .modified)
         }
     }
     
     static func readLeagues()->[League]{
-        //Array of Results
+        //Array of Results 
         let dbLeagues = realm.objects(League.self)
         
         var leagues = [League]()
@@ -32,4 +32,11 @@ class RealmManager {
         
         return leagues
     }
+    
+    static func flushDb(){
+        try! realm.write {
+            realm.deleteAll()
+        }
+    }
+    
 }
