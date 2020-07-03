@@ -8,7 +8,6 @@
 
 
 import UIKit
-import RealmSwift
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var leaguesTableView: UITableView!
@@ -18,6 +17,7 @@ class HomeViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     override func viewDidLoad() {
+        
         registerCustomCells()
         getLeagues()
     }

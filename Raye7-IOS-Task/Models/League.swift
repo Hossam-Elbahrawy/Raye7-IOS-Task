@@ -15,6 +15,7 @@ class League: Object, Decodable{
     @objc dynamic var shortName: String? = ""
     @objc dynamic  var name: String? = ""
     @objc dynamic var sport: String? = ""
+    @objc dynamic var createdAt = NSDate()
     
     enum CodingKeys: String, CodingKey {
         case id = "idLeague"

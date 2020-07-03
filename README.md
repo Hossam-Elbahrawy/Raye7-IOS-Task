@@ -23,7 +23,7 @@ pod install
 - [x] Get league details from API
 - [x] Build database layer using Realm
 - [x] Cache data into the database 
-- [ ] Add expiration date to the cached data
+- [x] Add expiration date (1 hour) to the cached data
 
 ## Screenshots
 
