@@ -7,18 +7,19 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct League: Decodable{
+class League: Object, Decodable{
     
-    var id: String
-    var shortName: String?
-    var name: String?
-    var sport: String?
+    @objc dynamic var id: String = ""
+    @objc dynamic var shortName: String? = ""
+    @objc dynamic  var name: String? = ""
+    @objc dynamic var sport: String? = ""
     
     enum CodingKeys: String, CodingKey {
-           case id = "idLeague"
-           case shortName = "strLeagueAlternate"
-           case name = "strLeague"
-           case sport = "strSport"
-       }
+        case id = "idLeague"
+        case shortName = "strLeagueAlternate"
+        case name = "strLeague"
+        case sport = "strSport"
+    }
 }

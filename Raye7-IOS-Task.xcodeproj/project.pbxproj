@@ -18,6 +18,7 @@
 		BF027F1424AD22BD005ABE41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF027F1324AD22BD005ABE41 /* Assets.xcassets */; };
 		BF027F1724AD22BD005ABE41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF027F1524AD22BD005ABE41 /* LaunchScreen.storyboard */; };
 		BF027F2224AD22BD005ABE41 /* Raye7_IOS_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027F2124AD22BD005ABE41 /* Raye7_IOS_TaskTests.swift */; };
+		BF820EFF24AF1FA2008E3D95 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF820EFE24AF1FA2008E3D95 /* RealmManager.swift */; };
 		BFA969EC24AE013D00C15CFA /* HomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA969EB24AE013D00C15CFA /* HomeTableController.swift */; };
 		BFA969F324AE0E5200C15CFA /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA969F124AE0E5200C15CFA /* LeagueCell.swift */; };
 		BFA969F424AE0E5200C15CFA /* LeagueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA969F224AE0E5200C15CFA /* LeagueCell.xib */; };
@@ -55,6 +56,7 @@
 		BF027F1D24AD22BD005ABE41 /* Raye7-IOS-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Raye7-IOS-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF027F2124AD22BD005ABE41 /* Raye7_IOS_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raye7_IOS_TaskTests.swift; sourceTree = "<group>"; };
 		BF027F2324AD22BD005ABE41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF820EFE24AF1FA2008E3D95 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		BFA969EB24AE013D00C15CFA /* HomeTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableController.swift; sourceTree = "<group>"; };
 		BFA969F124AE0E5200C15CFA /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
 		BFA969F224AE0E5200C15CFA /* LeagueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeagueCell.xib; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		BF027F0924AD22BD005ABE41 /* Raye7-IOS-Task */ = {
 			isa = PBXGroup;
 			children = (
+				BF820EFD24AF1F82008E3D95 /* Database */,
 				BF00A09524AD2B8600F9C91A /* Network */,
 				BF00A09424AD2B5900F9C91A /* Controllers */,
 				BF00A09324AD2B4D00F9C91A /* Views */,
@@ -182,6 +185,14 @@
 				BF027F2324AD22BD005ABE41 /* Info.plist */,
 			);
 			path = "Raye7-IOS-TaskTests";
+			sourceTree = "<group>";
+		};
+		BF820EFD24AF1F82008E3D95 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BF820EFE24AF1FA2008E3D95 /* RealmManager.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		D4951461A0C5059A00DBD078 /* Pods */ = {
@@ -366,6 +377,7 @@
 			files = (
 				BFA969EC24AE013D00C15CFA /* HomeTableController.swift in Sources */,
 				BF027F0B24AD22BD005ABE41 /* AppDelegate.swift in Sources */,
+				BF820EFF24AF1FA2008E3D95 /* RealmManager.swift in Sources */,
 				BF00A09D24AD4AE300F9C91A /* LeaguesRequests.swift in Sources */,
 				BF00A09724AD337A00F9C91A /* League.swift in Sources */,
 				BFA969F824AE2DDA00C15CFA /* LeagueDetailsViewController.swift in Sources */,
