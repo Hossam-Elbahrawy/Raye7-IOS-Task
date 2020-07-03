@@ -12,7 +12,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var leaguesTableView: UITableView!
-    var leagues:[League] = []
+    var leagues = [League]()
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -57,10 +57,23 @@ extension HomeViewController{
     }
     
     private func getLeagues(){
+        let leagues = RealmManager.readLeagues()
+        if leagues.isEmpty{
+            getLeaguesFromAPI()
+        }else{
+            self.leagues = leagues
+            self.leaguesTableView.reloadData()
+        }
+    }
+    
+    private func getLeaguesFromAPI(){
         LeaguesRequests.getLeagues{ result in
             switch result{
             case .success(let data):
                 self.leagues = data
+                // Save the fetched data to the database
+                RealmManager.saveLeagues(leagues: data)
+                //Reload the Data source to show the new data
                 self.leaguesTableView.reloadData()
             case .failure(let error):
                 print(error)
@@ -68,14 +81,15 @@ extension HomeViewController{
         }
     }
     private func gotToLeagueDetails(leagueId: String){
+        // get the league details VC
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let leagueDetailsVC = storyboard.instantiateViewController(identifier: "LeagueDetailsViewController") as! LeagueDetailsViewController
+        //Customize the VC
         leagueDetailsVC.leagueId = leagueId
         leagueDetailsVC.modalPresentationStyle = .fullScreen
-//        let navController = UINavigationController(rootViewController: leagueDetailsVC)
-    
+        
+        //Push the view controller to the navigation controller
         self.navigationController?.pushViewController(leagueDetailsVC, animated: true)
-//        self.present(navController, animated:true, completion: nil)
     }
     
 }

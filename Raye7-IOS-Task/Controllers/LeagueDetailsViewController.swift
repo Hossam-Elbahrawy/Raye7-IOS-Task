@@ -18,7 +18,6 @@ class LeagueDetailsViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     override func viewDidLoad() {
-        print(leagueId)
         getLeagueDetails()
     }
     
@@ -33,7 +32,6 @@ extension LeagueDetailsViewController{
         LeaguesRequests.getLeagueDetails(id: leagueId, { result in
             switch result{
             case .success(let data):
-                print(data)
                 self.leagueDetailsView.setLeagueDetailsData(LeaguDetails: data )
                 
             case .failure(let error):
